@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h2>Results</h2>
+
+
+
+@if (ViewBag.elements != null)
+
+{
+
+<h3>@ViewBag.elements.Count Result(s)</h3>
+
+<br />
+
+
+@foreach (var element in ViewBag.elements)
+    {
+
+<table>
+
+    <td>
+
+
+
+        <p>@element</p>
+
+
+
+    </td>
+
+</table>
+
+<br />
+
+    }
+
+
+
+
+}
+

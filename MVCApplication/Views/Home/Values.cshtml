@@ -1,0 +1,31 @@
+﻿@model MVCApplication.ViewModels.ValuesViewModel
+
+@{
+    ViewData["Title"] = "Values";
+}
+
+<h2>All Values</h2>
+
+<h3>@Model.elements.Count Result(s)</h3>
+
+<br />
+
+@foreach (var element in Model.elements)
+{
+<table>
+
+    <td>
+    <tr>
+
+            
+        <p>@element</p>
+           
+
+    </tr>
+
+    </td>
+
+    <br />
+
+</table>
+}
